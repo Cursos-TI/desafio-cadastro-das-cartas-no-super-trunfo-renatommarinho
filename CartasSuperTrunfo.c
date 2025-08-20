@@ -4,7 +4,7 @@
    
 
 int main() {
-    printf("Desafio Carta Super Trunfo - Novato\n");
+    printf("Desafio Carta Super Trunfo - Aventureiro\n");
 
     //Primeira carta
     char estado1[2];
@@ -14,6 +14,8 @@ int main() {
     float area1;
     float pib1;
     int pontos1;
+    float densidade_populacional1;
+    float pip_per_capita1;
 
     printf("Digite o Estado (uma letra A-H): \n");
     scanf("%s", &estado1);
@@ -36,6 +38,10 @@ int main() {
     printf("Digite o Número de Pontos Turísticos: \n");
     scanf("%d", &pontos1);
 
+    densidade_populacional1 = populacao1 / area1;
+
+    pip_per_capita1 = pib1 / populacao1;
+
     // Agora a saída pulando linha e agrupado da carta 1
     printf("\nCarta 1:\n");
     printf("Estado: %s\n", estado1);
@@ -45,7 +51,8 @@ int main() {
     printf("Área: %f km²\n", area1);
     printf("PIB %f bilhões de reais\n", pib1);
     printf("Número de Pontos Turísticos: %d\n", pontos1);
-
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade_populacional1);
+    printf("Pip per Capita: %.2f reais\n", pip_per_capita1);
 
     //Segunda Carta
     char estado2[2];
@@ -55,6 +62,8 @@ int main() {
     float area2;
     float pib2;
     int pontos2;
+    float densidade_populacional2;
+    float pip_per_capita2;
 
     printf("Digite o Estado (uma letra A-H): \n");
     scanf("%s", &estado2);
@@ -77,6 +86,10 @@ int main() {
     printf("Digite o Número de Pontos Turísticos: \n");
     scanf("%d", &pontos2);
 
+    densidade_populacional2 = populacao2 / area2;
+
+    pip_per_capita2 = pib2 / populacao2;
+
     // Agora a saída pulando linha e agrupado da carta 2
     printf("\nCarta 2:\n");
     printf("Estado: %s\n", estado2);
@@ -86,6 +99,8 @@ int main() {
     printf("Área: %f km²\n", area2);
     printf("PIB %f bilhões de reais\n", pib2);
     printf("Número de Pontos Turísticos: %d\n", pontos2);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade_populacional2);
+    printf("Pip per Capita: %.2f reais\n", pip_per_capita2);
 
     return 0;
 }
