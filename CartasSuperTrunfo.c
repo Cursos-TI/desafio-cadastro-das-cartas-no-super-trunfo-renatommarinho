@@ -20,13 +20,13 @@ int main() {
 
     printf("\n--- Carta 1 ---\n");
     printf("Digite o Estado (uma letra A-H): \n");
-    scanf("%s", &estado1);
+    scanf("%s", estado1);
 
     printf("Digite o Código da Carta: \n");
-    scanf("%s", &codigo1);
+    scanf("%s", codigo1);
 
     printf("Digite o Nome da Cidade: \n");
-    scanf(" %[^\n]", &cidade1);
+    scanf(" %[^\n]", cidade1);
 
     printf("Digite a População: \n");
     scanf("%d", &populacao1);
@@ -74,13 +74,13 @@ int main() {
 
     printf("\n--- Carta 2 ---\n");
     printf("Digite o Estado (uma letra A-H): \n");
-    scanf("%s", &estado2);
+    scanf("%s", estado2);
 
     printf("Digite o Código da Carta: \n");
-    scanf("%s", &codigo2);
+    scanf("%s", codigo2);
 
     printf("Digite o Nome da Cidade: \n");
-    scanf(" %[^\n]", &cidade2);
+    scanf(" %[^\n]", cidade2);
 
     printf("Digite a População: \n");
     scanf("%d", &populacao2);
@@ -118,7 +118,7 @@ int main() {
 
     printf("\n--- Comparação de Cartas Super Trunfo ---\n");
     printf("População: Carta 1 venceu: %d\n", populacao1 > populacao2);
-    printf("Área: Carta 1 venceu %d\n" area1 > area2);
+    printf("Área: Carta 1 venceu %d\n", area1 > area2);
     printf("PIB: Carta 1 venceu %d\n", pib1 > pib2);
     printf("Pontos Turísticos: Carta 1 venceu %d\n", pontos1 > pontos2);
 
