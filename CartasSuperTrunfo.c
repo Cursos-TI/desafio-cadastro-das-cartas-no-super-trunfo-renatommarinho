@@ -3,7 +3,7 @@
 
 int main()
 {
-    printf("Desafio Carta Super Trunfo - Mestre\n");
+    printf("Desafio Carta Super Trunfo Lógica - Novato\n");
 
     // Primeira carta
     char estado1[3];
@@ -42,7 +42,7 @@ int main()
     densidade1 = populacao1 / area1;
     pib_per_capita1 = pib1 / populacao1;
 
-    // Cálculo do super poder (mantido da atividade anterior)
+    // Cálculo do super poder
     super_poder1 = populacao1 + area1 + pib1 + pib_per_capita1 + (1.0f / densidade1);
 
     printf("\nCarta 1:\n");
